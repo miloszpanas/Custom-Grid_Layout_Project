@@ -1,0 +1,15 @@
+{
+  "name": "psd_to_html1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "live": "node_modules/.bin/browser-sync start --server --files css/*.css *.html js/*.js"
+  },
+  "author": "Miłosz Panas <miloszpanas@gmail.com> (https://github.com/miloszpanas)",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.24.6"
+  }
+}
