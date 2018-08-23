@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "live": "node_modules/.bin/browser-sync start --server --files css/*.css *.html js/*.js"
+    "live": "node_modules/.bin/browser-sync start --server --files css/*.css *.html js/*.js",
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+
   },
   "author": "Miłosz Panas <miloszpanas@gmail.com> (https://github.com/miloszpanas)",
   "license": "MIT",
-  "dependencies": {
-    "browser-sync": "^2.24.6"
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "node-sass": "^4.9.3"
   }
 }
