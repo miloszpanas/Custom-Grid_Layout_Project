@@ -185,7 +185,8 @@
 
 
 
-    @include respond(tab-port) {
+    @media only screen and (max-width: 56.25em),        // the back part of the card to be displayed when the card is smaller than 56.25 or on touch device
+        only screen and (hover: none) {
         
         height: auto;
         border-radius: 3px;
