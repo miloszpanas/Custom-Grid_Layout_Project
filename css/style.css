@@ -919,9 +919,6 @@ body {
   @media (max-width: 56.25em) {
     .section-about {
       padding: 21rem 0; } }
-  @media (max-width: 37.5em) {
-    .section-about {
-      padding: 17rem 0; } }
 
 .section-features {
   padding: 20rem 0;

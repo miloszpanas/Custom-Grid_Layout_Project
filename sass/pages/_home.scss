@@ -4,11 +4,7 @@
     margin-top: -20vh;
 
     @include respond(tab-port) {
-        padding: 21rem 0;;
-    }
-
-    @include respond(phone) {
-        padding: 17rem 0;;
+        padding: 21rem 0;
     }
 }
 
