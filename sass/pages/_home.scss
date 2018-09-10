@@ -13,10 +13,19 @@
     background-image: linear-gradient(to right bottom,
         rgba($color-primary--light, 0.8),
         rgba($color-primary--dark, 0.8)),
-         url(../img/nat-4.jpg);
+         url(../img/nat-4-small.jpg);
         background-size: cover;
     transform: skewY(-7deg);
     margin-top: -10rem;
+
+        @media (min-resolution: 192dpi) and (min-width: 37.5em),
+               (min-width: 112.5em) {
+                    background-image: linear-gradient(to right bottom,
+                    rgba($color-primary--light, 0.8),
+                    rgba($color-primary--dark, 0.8)),
+                    url(../img/nat-4.jpg);
+                    background-size: cover;
+               }
 
     & > * {
         transform: skewY(7deg);
@@ -66,6 +75,7 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
 
+
     @include respond(tab-land) {
         background-image: linear-gradient(105deg, 
                         rgba($color-white, .9) 0%,
@@ -82,6 +92,15 @@
                         url(../img/nat-10.jpg);
         background-size: cover;
     }
+
+    @include respond(phone) {
+        background-image: linear-gradient(to right, 
+                        rgba($color-white, .9) 0%,
+                        rgba($color-white, .9) 100%), 
+                        url(../img/nat-10-small.jpg);
+        background-size: cover;
+    }
+    
 
     &__form {
 
