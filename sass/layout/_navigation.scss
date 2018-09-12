@@ -93,6 +93,8 @@
                             $color-white 50%);
             background-size: 230%;
             transition: all .4s;
+
+            width: 0%;
         }
 
         &:hover,
@@ -111,6 +113,10 @@
     &__checkbox:checked ~ &__nav {
         opacity: 1;
         width: 100%;
+    }
+
+    &__checkbox:checked ~ &__nav &__link {
+        width: auto;
     }
 
 
