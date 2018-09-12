@@ -879,7 +879,7 @@ body {
     height: 100vh;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -20rem;
     z-index: 1500;
     opacity: 0;
     width: 0;
@@ -896,7 +896,7 @@ body {
   .navigation__item {
     margin: 1rem; }
   .navigation__link:link, .navigation__link:visited {
-    display: none;
+    display: inline-block;
     font-size: 3rem;
     font-weight: 300;
     padding: 1rem 2rem;
@@ -914,9 +914,8 @@ body {
     transform: scale(80); }
   .navigation__checkbox:checked ~ .navigation__nav {
     opacity: 1;
-    width: 100%; }
-  .navigation__checkbox:checked ~ .navigation__nav .navigation__link:link, .navigation__link:visited {
-    display: inline-block; }
+    width: 100%;
+    left: 0; }
   .navigation__icon {
     position: relative;
     margin-top: 3.5rem; }
