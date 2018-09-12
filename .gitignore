@@ -41,6 +41,7 @@ typings/
 
 #source files
 Source_Files/
+vendors/
 
 # Optional npm cache directory
 .npm
